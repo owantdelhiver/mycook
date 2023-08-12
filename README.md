@@ -37,6 +37,12 @@ sudo apt install maven
 sudo apt-get install git
 ```
 
+Ajouter votre clé ssh dans votre projet si cela n'est pas déjà fait
+
+```
+ssh-keygen
+```
+
 ## mysql 8.0
 
 Dans le terminal linux
@@ -68,4 +74,24 @@ Se connecter avec le user "mycook"
 
 ## Installation du projet
 
+Certaines commandes ne sont pas à éxecuter selon votre environnement
 
+```
+cd ~/
+mkdir dev
+mkdir dev/source
+cd dev/source
+git clone git@github.com:owantdelhiver/mycook.git
+```
+
+Un dossier vient d'être créer "mycook" avec tout le code
+
+```
+cd mycook
+```
+
+Pour lancer le projet
+
+```
+./mvnw spring-boot:run
+```
