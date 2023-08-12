@@ -1,23 +1,46 @@
-# mycook
+# Installation sous windows
 
 ## Prérequis
 OS : windows 10
 
-## Outils
-VM ubuntu via windows store
+## Ubuntu
+VM ubuntu 22.04 via windows store
 
 ``` 
 sudo apt update 
 sudo apt-get update
 ```
 
-installer code, java 17, maven 3.9, git, 
+## vs code
 
-### mysql 8.0
+```
+sudo apt install apt-transport-https
+sudo apt install code
+```
+
+## Java 17
+
+```
+sudo apt install openjdk-17-jdk openjdk-17-jre
+
+```
+
+## Maven 3.9
+
+```
+sudo apt install maven
+```
+
+## Git
+
+```
+sudo apt-get install git
+```
+
+## mysql 8.0
 
 Dans le terminal linux
 ```
-sudo apt update
 sudo apt install mysql-server
 sudo systemctl start mysql.service
 
@@ -42,3 +65,7 @@ sudo apt install phpmyadmin
 http://localhost:80/phpmyadmin
 
 Se connecter avec le user "mycook"
+
+## Installation du projet
+
+
