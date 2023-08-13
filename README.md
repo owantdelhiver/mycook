@@ -93,5 +93,6 @@ cd mycook
 Pour lancer le projet
 
 ```
+./mvnw clean install
 ./mvnw spring-boot:run
 ```
