@@ -1,4 +1,4 @@
-package com.example.springboot.model;
+package fr.mycook.model;
 
 import jakarta.persistence.*;
 
