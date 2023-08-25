@@ -47,7 +47,7 @@ ssh-keygen
 
 Dans le terminal linux
 ```
-sudo apt install mysql-server
+sudo apt install mysql-client-core-8.0
 sudo systemctl start mysql.service
 
 sudo mysql
