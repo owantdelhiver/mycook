@@ -19,6 +19,10 @@ public class BoHumanController implements BoController{
     @GetMapping(value = {"/human"})
     public String home(Model model) {
         List<Human> humans = humanService.findAll();
+
+        for (Human human : humans) {
+            System.out.println(human.getHouse().getName());
+        }
         model.addAttribute("humans", humans);
         return "bo/human";
     }

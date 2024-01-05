@@ -12,6 +12,7 @@
                 <div th:each="human : ${humans}">
                     <th th:text="${human.id}"></th>
                     <th th:text="${human.name}"></th>
+                    <th th:text="${human.house.name}"></th>
                 </div>
             </tbody>
         </div>
