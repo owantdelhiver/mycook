@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head th:replace="~{fragments/head.html :: head}"></head>
+
+    <body>
+        <div class="container"><br/>
+            <div class="alert alert-success">
+                <strong>Success!</strong> Je suis le bo Human
+            </div>
+
+            <tbody>
+                <div th:each="human : ${humans}">
+                    <th th:text="${human.id}"></th>
+                    <th th:text="${human.name}"></th>
+                </div>
+            </tbody>
+        </div>
+    </body>
+</html>
